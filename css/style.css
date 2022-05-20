@@ -19,6 +19,10 @@ a {
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -82,7 +86,7 @@ body {
     color: #6F6F6F;
 }
 .bike__text {
-    min-width: 420px;
+    max-width: 420px;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -147,4 +151,36 @@ body {
     font-size: 12px;
     line-height: 15px;
     margin: auto 0;
+}
+.description {
+    margin-bottom: 150px;
+}
+.description__inner {
+    display: flex;
+}
+.description__colum-img {
+    flex-basis: 570px;
+    margin-right: 60px;
+    object-fit: cover;
+}
+.description__colum-text {
+    flex-basis: 490px;
+}
+.description__info + .description__info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.description__info-title {
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.description__info-text {
+    max-width: 450px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
 }
