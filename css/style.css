@@ -3,26 +3,24 @@
 *::before {
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 li {
     padding-left: 0;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 p {
     margin: 0;
 }
-
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -30,7 +28,6 @@ body {
     line-height: 17px;
     color: #131313;
 }
-
 .container {
     width: 1220px;
     padding: 0 10px;
@@ -97,12 +94,16 @@ body {
     display: inline-block;
     background-color: #131313;
     color: #fff;
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
     text-transform: uppercase;
+    transition: all .3s;
+}
+.bike__link:hover {
+    background-color: #FF4040;
 }
 .bike-slider .slick-dots{
     right: 0;
@@ -352,11 +353,43 @@ body {
 .form__btn {
     background-color: #131313;
     color: #fff;
-    padding: 28px 81px;
+    padding: 28px 71px 28px 81px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    transition: all .3s;
+}
+.form__btn:hover {
+    background-color: #FF4040;
+}
+.footer {
+    background-color: #131313;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.footer__link {
+    text-decoration: underline;  
+}
+.footer__social-link + .footer__social-link {
+    margin-left: 26px;
+}
+.footer__contacts-link {
+    display: flex;
+    align-items: center;
+}
+.footer__contacts-link + .footer__contacts-link {
+    margin-top: 10px;
+}
+.footer__contacts-img {
+    margin-right: 10px;
 }
